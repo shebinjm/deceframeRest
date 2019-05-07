@@ -14,7 +14,7 @@ import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 public class DeceframeDatabaseNeo4jConfiguration {
 	
     public static final String URL = System.getenv("NEO4J_URL") != null ? System.getenv("NEO4J_URL") :
-    	"bolt://neo4j:ne04j@127.0.0.1:7687";
+    	"bolt://neo4j:admin123@127.0.0.1:7687";
 
     @Bean
     public org.neo4j.ogm.config.Configuration getConfiguration() {
